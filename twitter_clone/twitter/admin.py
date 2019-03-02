@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from twitter import models
+
+
+@admin.register(models.Tweet)
+class PersonAdmin(admin.ModelAdmin):
+    pass
